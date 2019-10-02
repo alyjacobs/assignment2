@@ -1,61 +1,80 @@
 a) git push https://github.com/alyjacobs/assignment2.git
-warning: push.default is unset; its implicit value is changing in
-Git 2.0 from 'matching' to 'simple'. To squelch this message
-and maintain the current behavior after the default changes, use:
+    warning: push.default is unset; its implicit value is changing in
+    Git 2.0 from 'matching' to 'simple'. To squelch this message
+    and maintain the current behavior after the default changes, use:
 
-  git config --global push.default matching
+      git config --global push.default matching
 
-To squelch this message and adopt the new behavior now, use:
+    To squelch this message and adopt the new behavior now, use:
 
-  git config --global push.default simple
+      git config --global push.default simple
 
-See 'git help config' and search for 'push.default' for further information.
-(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
-'current' instead of 'simple' if you sometimes use older versions of Git)
+    See 'git help config' and search for 'push.default' for further information.
+    (the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+    'current' instead of 'simple' if you sometimes use older versions of Git)
 
-Username for 'https://github.com': alyjacobs
-Password for 'https://alyjacobs@github.com': 
-Counting objects: 5, done.
-Delta compression using up to 56 threads.
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (4/4), 408 bytes | 0 bytes/s, done.
-Total 4 (delta 1), reused 0 (delta 0)
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/alyjacobs/assignment2.git
-   f47091b..3220697  master -> master
+    Username for 'https://github.com': alyjacobs
+    Password for 'https://alyjacobs@github.com':
+    Counting objects: 5, done.
+    Delta compression using up to 56 threads.
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (4/4), 408 bytes | 0 bytes/s, done.
+    Total 4 (delta 1), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    To https://github.com/alyjacobs/assignment2.git
+       f47091b..3220697  master -> master
 
 
 b) commits performed across all branches: 9
-command: git rev-list --all --count
+    command: git rev-list --all --count
 
 
 c) .gitignore last modified: Date:   Wed Sep 25 18:13:30 2019 -0400
-command: git log --follow .gitignore
+    command: git log --follow .gitignore
 
 
 d) Reasons why branches are used in a Git repository:
-	1. Increases support for developers working in parallel 
+	1. Increases support for developers working in parallel
  	2. Ensures code changes are verified before delivery
 
 
-e) Git log allows the user to see information about the commits that have been made throughout the entire history of the project. On the other hand, git status allows the user to view the differences and changes between the index file and the current head commit
+e) Git log allows the user to see information about the commits that have
+  been made throughout the entire history of the project. On the other hand,
+  git status allows the user to view the differences and changes between the
+  index file and the current head commit.
 
 
 
-f) To see the commits where "Vehicle.h" was one of the committed files, a user can call: git log Vehicle.h
+f) To see the commits where "Vehicle.h" was one of the committed files, a
+    user can call: git log Vehicle.h
 
 
 
-g) To see the commits whose commit message contains the word "file", a user can call: git show :/file
+g) To see the commits whose commit message contains the word "file", a user
+    can call: git show :/file
 
 
 
-h) Inheritance: when one class obtains and receives the properties and attributes of another class
-Polymorphism: objects of different types can be accessed through the same interface. This allows objects to take on many forms.
-Encapsulation: Binding the data with the code that manipulates it do that the data and code remains safe from external interference. 
+h) Inheritance: when one class obtains and receives the properties and
+                attributes of another class
+    Polymorphism: objects of different types can be accessed through the same
+                  interface. This allows objects to take on many forms.
+    Encapsulation: Binding the data with the code that manipulates it do that
+                    the data and code remains safe from external interference.
 
 
-i) The main difference between the "Dictator and Lieutenants" workflow and the "Integration Manager" workflow is that in the "Integration MAnager" workflow, each developer has two repositories, one that's private and one that's public. Also, with the Itegration Manager workflow, there is essentially only two tiers of workers (the manager and developers), but with the Dictator and Lieutenants workflow, there are three tiers of workers (dictator, lieutenant, developer). 
+i) The main difference between the "Dictator and Lieutenants" workflow and the
+  "Integration Manager" workflow is that in the "Integration Manager" workflow,
+   each developer has two repositories, one that's private and one that's
+   public. Also, with the Integration Manager workflow, there is essentially
+   only two tiers of workers (the manager and developers), but with the
+   Dictator and Lieutenants workflow, there are three tiers of
+   workers (dictator, lieutenant, developer).
 
 
-j) A team of 100 developers would benefit from following the "Dictator and Lieutenants" workflow as opposed to the "centralized" workflow because there would be more hectic merge conflicts by having 100 developers trying to merge to one repo (which would be the case with the Integration Manager workflow. Using the Dictator and Lieutenants workflow allows for better conflict resolution with an increased number of developers.
+j) A team of 100 developers would benefit from following the "Dictator and
+    Lieutenants" workflow as opposed to the "centralized" workflow because
+    there would be more hectic merge conflicts by having 100 developers trying
+    to merge to one repo (which would be the case with the Integration Manager
+    workflow. Using the Dictator and Lieutenants workflow allows for better
+    conflict resolution with an increased number of developers.
