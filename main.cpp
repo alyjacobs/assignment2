@@ -1,13 +1,21 @@
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
 #include "Car.h"
 #include "Bicycle.h"
+#include "Jet.h"
+#include "Skateboard.h"
+#include "Unicycle.h"
+
+
 
 void printVehiclesRoster(Vehicle **vehicles, int size);
 
 int main() {
+    srand( time(0) ); // seed the random number generator
     std::cout << "Driving simulator" << std::endl;
-    int size = 6;
-    int capacity = 10;
+    int size = 12;
+    int capacity = 12;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
     vehiclesArray[0] = new Car();
@@ -16,6 +24,15 @@ int main() {
     vehiclesArray[3] = new Car("Tesla", "T2", "electricity", "large");
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
+    vehiclesArray[6] = new Jet(); // class Jet declaration
+    vehiclesArray[7] = new Skateboard("Penny Board", "Gen5"); // class Skateboard
+    vehiclesArray[8] = new Unicycle("Club", "Freestyle", 24); // class Unicycle
+    vehiclesArray[9] = new Unicycle("Club", "Cross Country", 15);
+    vehiclesArray[10] = new Skateboard("Long Board", "Cheap");
+    vehiclesArray[11] = new Jet("Hawker 400", "Expensive", "Petroleum-based", 4);
+
+
+
 
     printVehiclesRoster(vehiclesArray, size);
 
