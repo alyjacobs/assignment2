@@ -78,3 +78,12 @@ j) A team of 100 developers would benefit from following the "Dictator and
     to merge to one repo (which would be the case with the Integration Manager
     workflow. Using the Dictator and Lieutenants workflow allows for better
     conflict resolution with an increased number of developers.
+
+5) OOP Principles:
+    The Driving simulator is using both polymorphism and encapsulation. This is
+    because the "virtual" functions is a feature of polymorphism . For example,
+    the virtual function mileageEstimate, uses polymorphism within every class.
+    This simulator also demonstrates encapsulation because there are private
+    variables used within the classes to remain hidden from other classes. For
+    example, the Jet class uses private integer variable numberOfEngines,
+    the other classes don't have access to.
